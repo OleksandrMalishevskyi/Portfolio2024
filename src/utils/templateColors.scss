@@ -1,0 +1,91 @@
+:root {
+  --template-1-color: rgb(16, 219, 246);
+  --template-2-color: rgb(53, 245, 136);
+  --template-3-color: rgb(255, 73, 200);
+  --template-4-color: rgb(240, 93, 70);
+  --template-5-color: #fdae38;
+  --template-6-color: var(--color-tem);
+  --template-7-color: #a37346;
+}
+
+.theme-template {
+
+  .tekst {
+    background-color: var(--background-color);
+  }
+  .switch__color,
+  .active-links,
+  h1,
+  h2,
+  h3,
+  h4,
+  .nav__links:hover,
+  .link-icon {
+    color: var(--background-color);
+  }
+
+  .fill__color {
+    fill: var(--background-color);
+  }
+
+  .switch__bg,
+  .skill-container::after,
+  .skill-container:hover,
+  ::-webkit-scrollbar-thumb,
+  .blog-heading::after,
+  .blog-heading::before,
+  .form-input-group input + span::after,
+  .form-input-group textarea + span::after {
+    background-color: var(--background-color);
+  }
+
+  .switch__border-color,
+  .input-search:focus,
+  .active-mode {
+    border: 1px solid var(--background-color);
+  }
+
+  .switch__stroke-color {
+    stroke: var(--background-color);
+  }
+
+  .skill-container:hover .skills-icon,
+  .skill__name {
+    color: var(--hover-color);
+  }
+}
+
+#template-1 {
+  --background-color: var(--template-1-color);
+  @extend .theme-template;
+}
+
+#template-2 {
+  --background-color: var(--template-2-color);
+  @extend .theme-template;
+}
+
+#template-3 {
+  --background-color: var(--template-3-color);
+  @extend .theme-template;
+}
+
+#template-4 {
+  --background-color: var(--template-4-color);
+  @extend .theme-template;
+}
+
+#template-5 {
+  --background-color: var(--template-5-color);
+  @extend .theme-template;
+}
+
+#template-6 {
+  --background-color: var(--template-6-color);
+  @extend .theme-template;
+}
+
+#template-7 {
+  --background-color: var(--template-7-color);
+  @extend .theme-template;
+}

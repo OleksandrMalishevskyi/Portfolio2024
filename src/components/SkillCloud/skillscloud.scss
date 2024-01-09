@@ -1,0 +1,14 @@
+.sphere {
+
+  font-family: sans-serif;
+  text-align: center;
+}
+.icon-rotate {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.icon-rotate:hover,
+.icon-rotate:focus {
+  transform: rotateY(360deg);
+}
